@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_30fc5c6138f0ce016faf17c4845e7462 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_30fc5c6138f0ce016faf17c4845e7462" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_30fc5c6138f0ce016faf17c4845e7462 = L.map(
+                "map_30fc5c6138f0ce016faf17c4845e7462",
+                {
+                    center: [-7.8011, 110.3426],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8be36df758b97392fd3fd19b4f069644 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8be36df758b97392fd3fd19b4f069644.addTo(map_30fc5c6138f0ce016faf17c4845e7462);
+        
+    
+            var marker_e9cdf1def1704bf66ef1b52b99d378fc = L.marker(
+                [-7.8011, 110.3426],
+                {
+}
+            ).addTo(map_30fc5c6138f0ce016faf17c4845e7462);
+        
+    
+            var icon_e9e359ad81eb36fcf7f6cfece6f105f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_df5d70a6a28550d7e7ef1316e41e0aee = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_f76b74c8044bedd0fe0ed253e891b4a9 = $(`<div id="html_f76b74c8044bedd0fe0ed253e891b4a9" style="width: 100.0%; height: 100.0%;">     <strong>Tugu Yogyakarta</strong><br>     🌡️ Suhu: 24.2 °C<br>     💧 Kelembapan: 85 %<br>     ☔ Curah Hujan: 0.0 mm     </div>`)[0];
+                popup_df5d70a6a28550d7e7ef1316e41e0aee.setContent(html_f76b74c8044bedd0fe0ed253e891b4a9);
+            
+        
+
+        marker_e9cdf1def1704bf66ef1b52b99d378fc.bindPopup(popup_df5d70a6a28550d7e7ef1316e41e0aee)
+        ;
+
+        
+    
+    
+                marker_e9cdf1def1704bf66ef1b52b99d378fc.setIcon(icon_e9e359ad81eb36fcf7f6cfece6f105f1);
+            
+    
+            var marker_0edc02474746ad93d3c4cbc2e17f2307 = L.marker(
+                [-7.7965, 110.3665],
+                {
+}
+            ).addTo(map_30fc5c6138f0ce016faf17c4845e7462);
+        
+    
+            var icon_4979dc339a3055796481975410bc617c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_85e5e71534a6070d1b414b24db865fcb = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_334f8a66a4342372c59c2604eb483b45 = $(`<div id="html_334f8a66a4342372c59c2604eb483b45" style="width: 100.0%; height: 100.0%;">     <strong>Alun-alun Utara & Keraton</strong><br>     🌡️ Suhu: 24.2 °C<br>     💧 Kelembapan: 85 %<br>     ☔ Curah Hujan: 0.0 mm     </div>`)[0];
+                popup_85e5e71534a6070d1b414b24db865fcb.setContent(html_334f8a66a4342372c59c2604eb483b45);
+            
+        
+
+        marker_0edc02474746ad93d3c4cbc2e17f2307.bindPopup(popup_85e5e71534a6070d1b414b24db865fcb)
+        ;
+
+        
+    
+    
+                marker_0edc02474746ad93d3c4cbc2e17f2307.setIcon(icon_4979dc339a3055796481975410bc617c);
+            
+    
+            var marker_a7a0ddce72ab7c8e32548a88be1faa04 = L.marker(
+                [-7.8133, 110.3675],
+                {
+}
+            ).addTo(map_30fc5c6138f0ce016faf17c4845e7462);
+        
+    
+            var icon_f77fd5174302b80bedc85411a0948eb3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_239b2d762cfbabfaa1711c813ce645a7 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_37adc7adcb9a006b6122feaa6d94d8c7 = $(`<div id="html_37adc7adcb9a006b6122feaa6d94d8c7" style="width: 100.0%; height: 100.0%;">     <strong>Alun-alun Selatan</strong><br>     🌡️ Suhu: 24.2 °C<br>     💧 Kelembapan: 85 %<br>     ☔ Curah Hujan: 0.0 mm     </div>`)[0];
+                popup_239b2d762cfbabfaa1711c813ce645a7.setContent(html_37adc7adcb9a006b6122feaa6d94d8c7);
+            
+        
+
+        marker_a7a0ddce72ab7c8e32548a88be1faa04.bindPopup(popup_239b2d762cfbabfaa1711c813ce645a7)
+        ;
+
+        
+    
+    
+                marker_a7a0ddce72ab7c8e32548a88be1faa04.setIcon(icon_f77fd5174302b80bedc85411a0948eb3);
+            
+    
+            var marker_c24474ddfa5d8a3e41fa1ab7d2f0097c = L.marker(
+                [-7.7934, 110.3658],
+                {
+}
+            ).addTo(map_30fc5c6138f0ce016faf17c4845e7462);
+        
+    
+            var icon_fca617fb4872f9c5cef252b05de0b694 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bde24137c4cc52cff9e08f191a1cedfd = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_62dc212949062f4a8c708ae08b523b43 = $(`<div id="html_62dc212949062f4a8c708ae08b523b43" style="width: 100.0%; height: 100.0%;">     <strong>Malioboro</strong><br>     🌡️ Suhu: 24.2 °C<br>     💧 Kelembapan: 85 %<br>     ☔ Curah Hujan: 0.0 mm     </div>`)[0];
+                popup_bde24137c4cc52cff9e08f191a1cedfd.setContent(html_62dc212949062f4a8c708ae08b523b43);
+            
+        
+
+        marker_c24474ddfa5d8a3e41fa1ab7d2f0097c.bindPopup(popup_bde24137c4cc52cff9e08f191a1cedfd)
+        ;
+
+        
+    
+    
+                marker_c24474ddfa5d8a3e41fa1ab7d2f0097c.setIcon(icon_fca617fb4872f9c5cef252b05de0b694);
+            
+    
+            var marker_1629aa736415adddf6f6b631fbf59f29 = L.marker(
+                [-7.7702, 110.3783],
+                {
+}
+            ).addTo(map_30fc5c6138f0ce016faf17c4845e7462);
+        
+    
+            var icon_be60836a5a3251ba639bd36289e032f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d1166a1085d9f3785b4638f8ebe3e31e = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_b72560c5a5d86b44dc92038f73090019 = $(`<div id="html_b72560c5a5d86b44dc92038f73090019" style="width: 100.0%; height: 100.0%;">     <strong>Universitas Gadjah Mada</strong><br>     🌡️ Suhu: 24.2 °C<br>     💧 Kelembapan: 85 %<br>     ☔ Curah Hujan: 0.0 mm     </div>`)[0];
+                popup_d1166a1085d9f3785b4638f8ebe3e31e.setContent(html_b72560c5a5d86b44dc92038f73090019);
+            
+        
+
+        marker_1629aa736415adddf6f6b631fbf59f29.bindPopup(popup_d1166a1085d9f3785b4638f8ebe3e31e)
+        ;
+
+        
+    
+    
+                marker_1629aa736415adddf6f6b631fbf59f29.setIcon(icon_be60836a5a3251ba639bd36289e032f3);
+            
+    
+            var marker_7e3b3d4267ac7d58b06de9e8e1c36a61 = L.marker(
+                [-7.7523, 110.4914],
+                {
+}
+            ).addTo(map_30fc5c6138f0ce016faf17c4845e7462);
+        
+    
+            var icon_662d54ed894baae50e604028ba8fa81e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d44574a76d1b9013b9ecd2502cb7f06d = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_0ba0d438e14dd2bc1c04b3146de6bcd7 = $(`<div id="html_0ba0d438e14dd2bc1c04b3146de6bcd7" style="width: 100.0%; height: 100.0%;">     <strong>Candi Prambanan</strong><br>     🌡️ Suhu: 24.2 °C<br>     💧 Kelembapan: 85 %<br>     ☔ Curah Hujan: 0.0 mm     </div>`)[0];
+                popup_d44574a76d1b9013b9ecd2502cb7f06d.setContent(html_0ba0d438e14dd2bc1c04b3146de6bcd7);
+            
+        
+
+        marker_7e3b3d4267ac7d58b06de9e8e1c36a61.bindPopup(popup_d44574a76d1b9013b9ecd2502cb7f06d)
+        ;
+
+        
+    
+    
+                marker_7e3b3d4267ac7d58b06de9e8e1c36a61.setIcon(icon_662d54ed894baae50e604028ba8fa81e);
+            
+    
+            var marker_2c7e739160d6516b05f9a8de3e79de8a = L.marker(
+                [-7.7844, 110.4327],
+                {
+}
+            ).addTo(map_30fc5c6138f0ce016faf17c4845e7462);
+        
+    
+            var icon_c910c7b53a62dbf6b6f408a37ecc4683 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f9a12b222c7a433e328dcb2848735cf3 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_8923bec8ce481801919ff811adc35c74 = $(`<div id="html_8923bec8ce481801919ff811adc35c74" style="width: 100.0%; height: 100.0%;">     <strong>Bandara Adisutjipto</strong><br>     🌡️ Suhu: 24.2 °C<br>     💧 Kelembapan: 85 %<br>     ☔ Curah Hujan: 0.0 mm     </div>`)[0];
+                popup_f9a12b222c7a433e328dcb2848735cf3.setContent(html_8923bec8ce481801919ff811adc35c74);
+            
+        
+
+        marker_2c7e739160d6516b05f9a8de3e79de8a.bindPopup(popup_f9a12b222c7a433e328dcb2848735cf3)
+        ;
+
+        
+    
+    
+                marker_2c7e739160d6516b05f9a8de3e79de8a.setIcon(icon_c910c7b53a62dbf6b6f408a37ecc4683);
+            
+</script>
+</html>
