@@ -7,7 +7,9 @@ Proyek sederhana untuk mengambil data cuaca asli Yogyakarta, lalu menghitung pel
 - Membuat dan menjalankan sirkuit kuantum di simulator lokal
 - Menampilkan prediksi peluang hujan untuk wilayah Yogyakarta
 
-## 📦 Cara Menjalankan
-Pastikan sudah terpasang paket yang dibutuhkan:
+## 📦 pip install requests qiskit folium
+
+## 🗺️ Membuat Peta Interaktif
+Untuk membuat peta lokasi cuaca Yogyakarta:
 ```bash
-pip install requests qiskit qiskit-aer
+python3 peta_cuaca_jogja.py
